@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: lightblue;
+    line-height: 100px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+  
+  /* Animation class to trigger */
+  .animate {
+    animation: bounce 1s ease;
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
